@@ -1,0 +1,14 @@
+C:\Users\ASUS\source\repos\Supermarket\bin\Debug\Supermarket.exe.config
+C:\Users\ASUS\source\repos\Supermarket\bin\Debug\Supermarket.exe
+C:\Users\ASUS\source\repos\Supermarket\bin\Debug\Supermarket.pdb
+C:\Users\ASUS\source\repos\Supermarket\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\ASUS\source\repos\Supermarket\bin\Debug\Guna.UI.dll
+C:\Users\ASUS\source\repos\Supermarket\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.Form1.resources
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.Properties.Resources.resources
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.csproj.CopyComplete
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.exe
+C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.pdb
