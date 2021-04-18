@@ -12,3 +12,17 @@ C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.csproj.CoreCompileI
 C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.csproj.CopyComplete
 C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.exe
 C:\Users\ASUS\source\repos\Supermarket\obj\Debug\Supermarket.pdb
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\bin\Debug\Supermarket.exe.config
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\bin\Debug\Supermarket.exe
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\bin\Debug\Supermarket.pdb
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\bin\Debug\Guna.UI2.dll
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.csprojAssemblyReference.cache
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.Form1.resources
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.Properties.Resources.resources
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.csproj.GenerateResource.cache
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.csproj.CopyComplete
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.exe
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.pdb
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.ProdukForm.resources
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.CategoryForm.resources
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.SellerForm.resources
