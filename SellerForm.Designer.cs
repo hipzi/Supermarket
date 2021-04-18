@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellerForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.button8 = new System.Windows.Forms.Button();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -46,8 +49,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +75,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(793, 488);
             this.panel1.TabIndex = 1;
+            // 
+            // bunifuMaterialTextbox5
+            // 
+            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox5.HintText = "";
+            this.bunifuMaterialTextbox5.isPassword = false;
+            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.White;
+            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuMaterialTextbox5.LineThickness = 3;
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(130, 268);
+            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
+            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(127, 25);
+            this.bunifuMaterialTextbox5.TabIndex = 20;
+            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // dataGridView1
             // 
@@ -125,6 +145,19 @@
             this.button10.Text = "ADD";
             this.button10.UseVisualStyleBackColor = false;
             // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(7, 269);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(119, 32);
+            this.button9.TabIndex = 13;
+            this.button9.Text = "PASSWORD";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // bunifuMaterialTextbox4
             // 
             this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -138,6 +171,7 @@
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuMaterialTextbox4.LineThickness = 3;
             this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(130, 222);
+            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(127, 25);
             this.bunifuMaterialTextbox4.TabIndex = 12;
@@ -169,6 +203,7 @@
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuMaterialTextbox3.LineThickness = 3;
             this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(130, 172);
+            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(127, 28);
             this.bunifuMaterialTextbox3.TabIndex = 10;
@@ -200,6 +235,7 @@
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuMaterialTextbox2.LineThickness = 3;
             this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(130, 126);
+            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(127, 28);
             this.bunifuMaterialTextbox2.TabIndex = 8;
@@ -231,6 +267,7 @@
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuMaterialTextbox1.LineThickness = 3;
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(130, 82);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(127, 28);
             this.bunifuMaterialTextbox1.TabIndex = 6;
@@ -313,37 +350,6 @@
             this.button1.Text = "Products";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(7, 269);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(119, 32);
-            this.button9.TabIndex = 13;
-            this.button9.Text = "PASSWORD";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // bunifuMaterialTextbox5
-            // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.White;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(130, 268);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(127, 25);
-            this.bunifuMaterialTextbox5.TabIndex = 20;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // SellerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +361,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SellerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellerForm";

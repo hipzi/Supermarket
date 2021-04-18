@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CategoryForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.KategoriGDV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -46,15 +48,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.KategoriDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.KategoriDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KategoriGDV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel1.Controls.Add(this.KategoriDGV);
+            this.panel1.Controls.Add(this.KategoriGDV);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
@@ -70,6 +71,65 @@
             this.panel1.Size = new System.Drawing.Size(793, 488);
             this.panel1.TabIndex = 2;
             // 
+            // KategoriGDV
+            // 
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.KategoriGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.KategoriGDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.KategoriGDV.BackgroundColor = System.Drawing.Color.White;
+            this.KategoriGDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.KategoriGDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.KategoriGDV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.KategoriGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.KategoriGDV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.KategoriGDV.DefaultCellStyle = dataGridViewCellStyle12;
+            this.KategoriGDV.EnableHeadersVisualStyles = false;
+            this.KategoriGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.KategoriGDV.Location = new System.Drawing.Point(310, 85);
+            this.KategoriGDV.Name = "KategoriGDV";
+            this.KategoriGDV.RowHeadersVisible = false;
+            this.KategoriGDV.RowTemplate.Height = 30;
+            this.KategoriGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.KategoriGDV.Size = new System.Drawing.Size(467, 390);
+            this.KategoriGDV.TabIndex = 18;
+            this.KategoriGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.KategoriGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.KategoriGDV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.KategoriGDV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.KategoriGDV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.KategoriGDV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.KategoriGDV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.KategoriGDV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.KategoriGDV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.KategoriGDV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.KategoriGDV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KategoriGDV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.KategoriGDV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.KategoriGDV.ThemeStyle.HeaderStyle.Height = 25;
+            this.KategoriGDV.ThemeStyle.ReadOnly = false;
+            this.KategoriGDV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.KategoriGDV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.KategoriGDV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KategoriGDV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.KategoriGDV.ThemeStyle.RowsStyle.Height = 30;
+            this.KategoriGDV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.KategoriGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.KategoriGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KategoriGDV_CellContentClick);
+            // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.White;
@@ -83,6 +143,7 @@
             this.button12.TabIndex = 16;
             this.button12.Text = "EDIT";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -97,6 +158,7 @@
             this.button11.TabIndex = 15;
             this.button11.Text = "DELETE";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -274,64 +336,6 @@
             this.button1.Text = "Sellers";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // KategoriDGV
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.KategoriDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.KategoriDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.KategoriDGV.BackgroundColor = System.Drawing.Color.White;
-            this.KategoriDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.KategoriDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.KategoriDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.KategoriDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.KategoriDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.KategoriDGV.DefaultCellStyle = dataGridViewCellStyle6;
-            this.KategoriDGV.EnableHeadersVisualStyles = false;
-            this.KategoriDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.KategoriDGV.Location = new System.Drawing.Point(310, 85);
-            this.KategoriDGV.Name = "KategoriDGV";
-            this.KategoriDGV.RowHeadersVisible = false;
-            this.KategoriDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.KategoriDGV.Size = new System.Drawing.Size(467, 390);
-            this.KategoriDGV.TabIndex = 18;
-            this.KategoriDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.KategoriDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.KategoriDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.KategoriDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.KategoriDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.KategoriDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.KategoriDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.KategoriDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.KategoriDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.KategoriDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.KategoriDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.KategoriDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.KategoriDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.KategoriDGV.ThemeStyle.HeaderStyle.Height = 4;
-            this.KategoriDGV.ThemeStyle.ReadOnly = false;
-            this.KategoriDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.KategoriDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.KategoriDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.KategoriDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.KategoriDGV.ThemeStyle.RowsStyle.Height = 22;
-            this.KategoriDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.KategoriDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.KategoriDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KategoriDGV_CellContentClick);
-            // 
             // CategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,11 +347,12 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CategoryForm";
             this.Text = "CategoryForm";
-            this.Load += new System.EventHandler(this.CategoryForm_Load_1);
+            this.Load += new System.EventHandler(this.CategoryForm_Load_2);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.KategoriDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KategoriGDV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,6 +375,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private Guna.UI2.WinForms.Guna2DataGridView KategoriDGV;
+        private Guna.UI2.WinForms.Guna2DataGridView KategoriGDV;
     }
 }

@@ -27,7 +27,7 @@ namespace Supermarket
                 string query = "insert into Kategori values ("+IDKategori.Text+",'"+NamaKategori.Text+"','"+ DeskripsiKategori .Text+"')";
                 SqlCommand cmd = new SqlCommand(query, connect);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Kategori Added Successfully");
+                MessageBox.Show("Category Added Successfully");
             }
             catch(Exception ex)
             {
@@ -43,7 +43,7 @@ namespace Supermarket
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var dataset = new DataSet();
             sda.Fill(dataset);
-            KategoriDGV.DataSource = dataset.Tables[0];
+            KategoriGDV.DataSource = dataset.Tables[0];
             connect.Close();
         }   
 
@@ -52,24 +52,67 @@ namespace Supermarket
             Application.Exit();
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void KategoriGDV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            IDKategori.Text = KategoriGDV.SelectedRows[0].Cells[0].Value.ToString();
+            NamaKategori.Text = KategoriGDV.SelectedRows[0].Cells[1].Value.ToString();
+            DeskripsiKategori.Text = KategoriGDV.SelectedRows[0].Cells[2].Value.ToString();
         }
 
-        private void CategoryForm_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void KategoriDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void CategoryForm_Load_1(object sender, EventArgs e)
+        private void CategoryForm_Load_2(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(IDKategori.Text == "")
+                {
+
+                    MessageBox.Show("Select The Category to Delete");
+                }
+                else
+                {
+                    connect.Open();
+                    string query = "delete from Kategori where IDKategori=" + IDKategori.Text + "";
+                    SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Deleted Successfully");
+                    connect.Close();
+                    populate();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (IDKategori.Text == "" || NamaKategori.Text == "" || DeskripsiKategori.Text == "")
+                {
+                    MessageBox.Show("Missing Information");
+                }
+                else
+                {
+                    connect.Open();
+                    string query = "update Kategori set NamaKategori='" + NamaKategori.Text + "',DeskripsiKategori='" + DeskripsiKategori.Text + "' where IDKategori=" + IDKategori.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Successfully Updated");
+                    connect.Close();
+                    populate();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
