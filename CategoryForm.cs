@@ -28,6 +28,8 @@ namespace Supermarket
                 SqlCommand cmd = new SqlCommand(query, connect);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Category Added Successfully");
+                connect.Close();
+                populate();
             }
             catch(Exception ex)
             {
@@ -113,6 +115,13 @@ namespace Supermarket
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ProdukForm produk = new ProdukForm();
+            produk.Show();
+            this.Hide();
         }
     }
 }

@@ -114,45 +114,10 @@ namespace Supermarket
                 else
                 {
                     connect.Open();
-                    string query = "update Produk set NamaProduk='" + NamaProduk.Text + "',QuantProduk='" + QuantProduk.Text + "', KategoriProduk='" + KategoriCb.SelectedValue.ToString() + "' where IDProduk=" + IDProduk.Text + ";";
+                    string query = "update Produk set NamaProduk='" + NamaProduk.Text + "',QuantProduk='" + QuantProduk.Text + "', KategoriCb='" + KategoriCb.Text + "' where IDProduk=" + IDProduk.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, connect);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Successfully Updated");
-                    connect.Close();
-                    populate();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void ProdukGDV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            IDProduk.Text = ProdukGDV.SelectedRows[0].Cells[0].Value.ToString();
-            NamaProduk.Text = ProdukGDV.SelectedRows[0].Cells[1].Value.ToString();
-            QuantProduk.Text = ProdukGDV.SelectedRows[0].Cells[2].Value.ToString();
-            priceProduk.Text = ProdukGDV.SelectedRows[0].Cells[3].Value.ToString();
-            KategoriCb.Text = ProdukGDV.SelectedRows[0].Cells[4].Value.ToString();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (IDProduk.Text == "")
-                {
-
-                    MessageBox.Show("Select The Product to Delete");
-                }
-                else
-                {
-                    connect.Open();
-                    string query = "delete from Produk where IDProduk=" + IDProduk.Text + "";
-                    SqlCommand cmd = new SqlCommand(query, connect);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Deleted Successfully");
+                    MessageBox.Show("Category Successfully Updated");
                     connect.Close();
                     populate();
                 }
