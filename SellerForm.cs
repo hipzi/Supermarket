@@ -105,5 +105,35 @@ namespace Supermarket
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (IDSeller.Text == "" || NamaSeller.Text == "" || AgeSeller.Text == "" || PhoneSeller.Text == "" || PassSeller.Text == "")
+                {
+                    MessageBox.Show("Missing Information");
+                }
+                else
+                {
+                    connect.Open();
+                    string query = "update Seller set NamaSeller='" + NamaSeller.Text + "',AgeSeller='" + AgeSeller.Text + "',PhoneSeller='" + PhoneSeller.Text + "',PassSeller='" + PassSeller.Text + "' where IDSeller=" + IDSeller.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, connect);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Seller Successfully Updated");
+                    connect.Close();
+                    populate();
+                    IDSeller.Text = "";
+                    NamaSeller.Text = "";
+                    AgeSeller.Text = "";
+                    PhoneSeller.Text = "";
+                    PassSeller.Text = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

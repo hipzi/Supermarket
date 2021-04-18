@@ -30,6 +30,9 @@ namespace Supermarket
                 MessageBox.Show("Category Added Successfully");
                 connect.Close();
                 populate();
+                IDKategori.Text = "";
+                NamaKategori.Text = "";
+                DeskripsiKategori.Text = "";
             }
             catch(Exception ex)
             {
@@ -84,6 +87,9 @@ namespace Supermarket
                     MessageBox.Show("Category Deleted Successfully");
                     connect.Close();
                     populate();
+                    IDKategori.Text = "";
+                    NamaKategori.Text = "";
+                    DeskripsiKategori.Text = "";
                 }
             }
             catch (Exception ex)
@@ -109,6 +115,9 @@ namespace Supermarket
                     MessageBox.Show("Category Successfully Updated");
                     connect.Close();
                     populate();
+                    IDKategori.Text = "";
+                    NamaKategori.Text = "";
+                    DeskripsiKategori.Text = "";
                 }
             }
             catch (Exception ex)

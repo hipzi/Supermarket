@@ -78,12 +78,17 @@ namespace Supermarket
             try
             {
                 connect.Open();
-                string query = "insert into Produk values (" + IDProduk.Text + ",'" + NamaProduk.Text + "'," + QuantProduk.Text + ","+priceProduk.Text+", '"+KategoriCb.SelectedValue.ToString()+"')";
+                string query = "insert into Produk values (" + IDProduk.Text + ",'" + NamaProduk.Text + "'," + QuantProduk.Text + ","+ priceProduk.Text +", '"+KategoriCb.SelectedValue.ToString()+"')";
                 SqlCommand cmd = new SqlCommand(query, connect);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Added Successfully");
                 connect.Close();
                 populate();
+                IDProduk.Text = "";
+                NamaProduk.Text = "";
+                QuantProduk.Text = "";
+                priceProduk.Text = "";
+                KategoriCb.Text = "";
             }
             catch (Exception ex)
             {
@@ -120,6 +125,11 @@ namespace Supermarket
                     MessageBox.Show("Product Successfully Updated");
                     connect.Close();
                     populate();
+                    IDProduk.Text = "";
+                    NamaProduk.Text = "";
+                    QuantProduk.Text = "";
+                    priceProduk.Text = "";
+                    KategoriCb.Text = "";
                 }
             }
             catch (Exception ex)
@@ -155,6 +165,11 @@ namespace Supermarket
                     MessageBox.Show("Product Deleted Successfully");
                     connect.Close();
                     populate();
+                    IDProduk.Text = "";
+                    NamaProduk.Text = "";
+                    QuantProduk.Text = "";
+                    priceProduk.Text = "";
+                    KategoriCb.Text = "";
                 }
             }
             catch (Exception ex)
