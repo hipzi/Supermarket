@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProdukForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ProdukGDV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button13 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button12 = new System.Windows.Forms.Button();
@@ -51,9 +52,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.ProdukGDV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProdukGDV)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,65 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(793, 488);
             this.panel1.TabIndex = 0;
+            // 
+            // ProdukGDV
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.ProdukGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.ProdukGDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ProdukGDV.BackgroundColor = System.Drawing.Color.White;
+            this.ProdukGDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProdukGDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ProdukGDV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProdukGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.ProdukGDV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProdukGDV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ProdukGDV.EnableHeadersVisualStyles = false;
+            this.ProdukGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ProdukGDV.Location = new System.Drawing.Point(310, 85);
+            this.ProdukGDV.Name = "ProdukGDV";
+            this.ProdukGDV.RowHeadersVisible = false;
+            this.ProdukGDV.RowTemplate.Height = 30;
+            this.ProdukGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ProdukGDV.Size = new System.Drawing.Size(467, 390);
+            this.ProdukGDV.TabIndex = 20;
+            this.ProdukGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.ProdukGDV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.ProdukGDV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ProdukGDV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ProdukGDV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.ProdukGDV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProdukGDV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.ProdukGDV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.ProdukGDV.ThemeStyle.HeaderStyle.Height = 25;
+            this.ProdukGDV.ThemeStyle.ReadOnly = false;
+            this.ProdukGDV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProdukGDV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ProdukGDV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProdukGDV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ProdukGDV.ThemeStyle.RowsStyle.Height = 30;
+            this.ProdukGDV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.ProdukGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.ProdukGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdukGDV_CellContentClick);
             // 
             // button13
             // 
@@ -358,19 +417,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(8, 189);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 33);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Selling";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -384,72 +430,27 @@
             this.label5.Text = "x";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // ProdukGDV
+            // button3
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.ProdukGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.ProdukGDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.ProdukGDV.BackgroundColor = System.Drawing.Color.White;
-            this.ProdukGDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ProdukGDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ProdukGDV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ProdukGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.ProdukGDV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ProdukGDV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ProdukGDV.EnableHeadersVisualStyles = false;
-            this.ProdukGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProdukGDV.Location = new System.Drawing.Point(310, 85);
-            this.ProdukGDV.Name = "ProdukGDV";
-            this.ProdukGDV.RowHeadersVisible = false;
-            this.ProdukGDV.RowTemplate.Height = 30;
-            this.ProdukGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProdukGDV.Size = new System.Drawing.Size(467, 390);
-            this.ProdukGDV.TabIndex = 20;
-            this.ProdukGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.ProdukGDV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.ProdukGDV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProdukGDV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ProdukGDV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.ProdukGDV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProdukGDV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.ProdukGDV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.ProdukGDV.ThemeStyle.HeaderStyle.Height = 25;
-            this.ProdukGDV.ThemeStyle.ReadOnly = false;
-            this.ProdukGDV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.ProdukGDV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.ProdukGDV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProdukGDV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.ProdukGDV.ThemeStyle.RowsStyle.Height = 30;
-            this.ProdukGDV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProdukGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.ProdukGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdukGDV_CellContentClick);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
+            this.button3.Location = new System.Drawing.Point(0, 484);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 33);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Logout";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ProdukForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 529);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
@@ -472,7 +473,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button5;
         private Bunifu.Framework.UI.BunifuMaterialTextbox QuantProduk;
@@ -490,5 +490,6 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.ComboBox comboBox2;
         private Guna.UI2.WinForms.Guna2DataGridView ProdukGDV;
+        private System.Windows.Forms.Button button3;
     }
 }

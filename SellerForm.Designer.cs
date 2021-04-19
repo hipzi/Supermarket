@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellerForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SellerGDV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.PassSeller = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -48,10 +49,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.SellerGDV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SellerGDV)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,65 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(793, 488);
             this.panel1.TabIndex = 1;
+            // 
+            // SellerGDV
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SellerGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.SellerGDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.SellerGDV.BackgroundColor = System.Drawing.Color.White;
+            this.SellerGDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SellerGDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SellerGDV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SellerGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.SellerGDV.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SellerGDV.DefaultCellStyle = dataGridViewCellStyle3;
+            this.SellerGDV.EnableHeadersVisualStyles = false;
+            this.SellerGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SellerGDV.Location = new System.Drawing.Point(310, 85);
+            this.SellerGDV.Name = "SellerGDV";
+            this.SellerGDV.RowHeadersVisible = false;
+            this.SellerGDV.RowTemplate.Height = 30;
+            this.SellerGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SellerGDV.Size = new System.Drawing.Size(467, 390);
+            this.SellerGDV.TabIndex = 21;
+            this.SellerGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.SellerGDV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.SellerGDV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SellerGDV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.SellerGDV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.SellerGDV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellerGDV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.SellerGDV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.SellerGDV.ThemeStyle.HeaderStyle.Height = 25;
+            this.SellerGDV.ThemeStyle.ReadOnly = false;
+            this.SellerGDV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.SellerGDV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SellerGDV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellerGDV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SellerGDV.ThemeStyle.RowsStyle.Height = 30;
+            this.SellerGDV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SellerGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SellerGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SellerGDV_CellContentClick);
             // 
             // PassSeller
             // 
@@ -311,19 +370,6 @@
             this.label5.Text = "x";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(18, 189);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 33);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Selling";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.FlatAppearance.BorderSize = 0;
@@ -352,64 +398,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // SellerGDV
+            // button3
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.SellerGDV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.SellerGDV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.SellerGDV.BackgroundColor = System.Drawing.Color.White;
-            this.SellerGDV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SellerGDV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.SellerGDV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SellerGDV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.SellerGDV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SellerGDV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.SellerGDV.EnableHeadersVisualStyles = false;
-            this.SellerGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SellerGDV.Location = new System.Drawing.Point(310, 85);
-            this.SellerGDV.Name = "SellerGDV";
-            this.SellerGDV.RowHeadersVisible = false;
-            this.SellerGDV.RowTemplate.Height = 30;
-            this.SellerGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SellerGDV.Size = new System.Drawing.Size(467, 390);
-            this.SellerGDV.TabIndex = 21;
-            this.SellerGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.SellerGDV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.SellerGDV.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.SellerGDV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SellerGDV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.SellerGDV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.SellerGDV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SellerGDV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.SellerGDV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.SellerGDV.ThemeStyle.HeaderStyle.Height = 25;
-            this.SellerGDV.ThemeStyle.ReadOnly = false;
-            this.SellerGDV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.SellerGDV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.SellerGDV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SellerGDV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.SellerGDV.ThemeStyle.RowsStyle.Height = 30;
-            this.SellerGDV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SellerGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.SellerGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SellerGDV_CellContentClick);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
+            this.button3.Location = new System.Drawing.Point(0, 484);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 33);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "Logout";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // SellerForm
             // 
@@ -450,11 +451,11 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PassSeller;
         private System.Windows.Forms.Button button9;
         private Guna.UI2.WinForms.Guna2DataGridView SellerGDV;
+        private System.Windows.Forms.Button button3;
     }
 }

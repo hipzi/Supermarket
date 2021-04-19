@@ -149,5 +149,12 @@ namespace Supermarket
             produk.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
+        }
     }
 }

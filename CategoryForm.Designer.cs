@@ -45,9 +45,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.KategoriGDV)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(793, 488);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // KategoriGDV
             // 
@@ -297,19 +298,6 @@
             this.label5.Text = "x";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(18, 189);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 33);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Selling";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.FlatAppearance.BorderSize = 0;
@@ -337,6 +325,20 @@
             this.button1.Text = "Sellers";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
+            this.button3.Location = new System.Drawing.Point(0, 484);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 33);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Logout";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // CategoryForm
             // 
@@ -375,9 +377,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2DataGridView KategoriGDV;
+        private System.Windows.Forms.Button button3;
     }
 }

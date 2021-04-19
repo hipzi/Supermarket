@@ -26,3 +26,4 @@ C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.pdb
 C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.ProdukForm.resources
 C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.CategoryForm.resources
 C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.SellerForm.resources
+C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.Splach.resources
