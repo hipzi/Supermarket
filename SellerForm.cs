@@ -135,5 +135,19 @@ namespace Supermarket
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProdukForm produk = new ProdukForm();
+            produk.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CategoryForm produk = new CategoryForm();
+            produk.Show();
+            this.Hide();
+        }
     }
 }

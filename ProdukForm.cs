@@ -19,7 +19,9 @@ namespace Supermarket
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            SellerForm produk = new SellerForm();
+            produk.Show();
+            this.Hide();
         }
         SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TOSHIBA\Documents\supermarketdb.mdf;Integrated Security=True;Connect Timeout=30");
         private void label5_Click(object sender, EventArgs e)

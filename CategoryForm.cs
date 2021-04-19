@@ -132,5 +132,12 @@ namespace Supermarket
             produk.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SellerForm produk = new SellerForm();
+            produk.Show();
+            this.Hide();
+        }
     }
 }
