@@ -27,3 +27,21 @@ C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.ProdukForm.
 C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.CategoryForm.resources
 C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.SellerForm.resources
 C:\Users\TOSHIBA\source\repos\pbkk\Supermarket\obj\Debug\Supermarket.Splach.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\bin\Debug\Supermarket.exe.config
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\bin\Debug\Supermarket.exe
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\bin\Debug\Supermarket.pdb
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\bin\Debug\Guna.UI.dll
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\bin\Debug\Guna.UI2.dll
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.csprojAssemblyReference.cache
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.CategoryForm.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.Form1.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.ProdukForm.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.Properties.Resources.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.SellerForm.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.SellingForm.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.Splach.resources
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.csproj.GenerateResource.cache
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.csproj.CoreCompileInputs.cache
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.csproj.CopyComplete
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.exe
+D:\Matkul TC\6_PBKK\Tugas 5\Supermarket\obj\Debug\Supermarket.pdb

@@ -1,4 +1,7 @@
-﻿namespace Supermarket
+﻿using System;
+using System.Windows.Forms;
+
+namespace Supermarket
 {
     partial class ProdukForm
     {
@@ -34,8 +37,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProdukForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.ProdukGDV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.button13 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -62,8 +63,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.ProdukGDV);
-            this.panel1.Controls.Add(this.button13);
-            this.panel1.Controls.Add(this.comboBox2);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
@@ -78,10 +77,12 @@
             this.panel1.Controls.Add(this.IDProduk);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Location = new System.Drawing.Point(137, 29);
+            this.panel1.Location = new System.Drawing.Point(206, 45);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(793, 488);
+            this.panel1.Size = new System.Drawing.Size(1190, 751);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // ProdukGDV
             // 
@@ -111,12 +112,14 @@
             this.ProdukGDV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ProdukGDV.EnableHeadersVisualStyles = false;
             this.ProdukGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ProdukGDV.Location = new System.Drawing.Point(310, 85);
+            this.ProdukGDV.Location = new System.Drawing.Point(465, 131);
+            this.ProdukGDV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ProdukGDV.Name = "ProdukGDV";
             this.ProdukGDV.RowHeadersVisible = false;
+            this.ProdukGDV.RowHeadersWidth = 62;
             this.ProdukGDV.RowTemplate.Height = 30;
             this.ProdukGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ProdukGDV.Size = new System.Drawing.Size(467, 390);
+            this.ProdukGDV.Size = new System.Drawing.Size(700, 600);
             this.ProdukGDV.TabIndex = 20;
             this.ProdukGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.ProdukGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -142,35 +145,6 @@
             this.ProdukGDV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.ProdukGDV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdukGDV_CellContentClick);
             // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.White;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Teal;
-            this.button13.Location = new System.Drawing.Point(700, 58);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(77, 25);
-            this.button13.TabIndex = 19;
-            this.button13.Text = "Refresh";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.comboBox2.ForeColor = System.Drawing.Color.Teal;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "ADMIN",
-            "SELLER"});
-            this.comboBox2.Location = new System.Drawing.Point(568, 58);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(127, 25);
-            this.comboBox2.TabIndex = 18;
-            this.comboBox2.Text = "Select Category";
-            // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.White;
@@ -178,9 +152,10 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Teal;
-            this.button12.Location = new System.Drawing.Point(97, 331);
+            this.button12.Location = new System.Drawing.Point(146, 509);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(74, 30);
+            this.button12.Size = new System.Drawing.Size(111, 46);
             this.button12.TabIndex = 16;
             this.button12.Text = "EDIT";
             this.button12.UseVisualStyleBackColor = false;
@@ -193,9 +168,10 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Teal;
-            this.button11.Location = new System.Drawing.Point(177, 331);
+            this.button11.Location = new System.Drawing.Point(266, 509);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(80, 30);
+            this.button11.Size = new System.Drawing.Size(120, 46);
             this.button11.TabIndex = 15;
             this.button11.Text = "DELETE";
             this.button11.UseVisualStyleBackColor = false;
@@ -208,9 +184,10 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Teal;
-            this.button10.Location = new System.Drawing.Point(17, 331);
+            this.button10.Location = new System.Drawing.Point(26, 509);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(74, 30);
+            this.button10.Size = new System.Drawing.Size(111, 46);
             this.button10.TabIndex = 11;
             this.button10.Text = "ADD";
             this.button10.UseVisualStyleBackColor = false;
@@ -224,10 +201,9 @@
             this.KategoriCb.Items.AddRange(new object[] {
             "ADMIN",
             "SELLER"});
-            this.KategoriCb.Location = new System.Drawing.Point(129, 268);
-            this.KategoriCb.Margin = new System.Windows.Forms.Padding(2);
+            this.KategoriCb.Location = new System.Drawing.Point(194, 412);
             this.KategoriCb.Name = "KategoriCb";
-            this.KategoriCb.Size = new System.Drawing.Size(127, 25);
+            this.KategoriCb.Size = new System.Drawing.Size(188, 31);
             this.KategoriCb.TabIndex = 14;
             this.KategoriCb.Text = "Select Category";
             // 
@@ -237,9 +213,10 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(6, 268);
+            this.button9.Location = new System.Drawing.Point(9, 412);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(119, 32);
+            this.button9.Size = new System.Drawing.Size(178, 49);
             this.button9.TabIndex = 13;
             this.button9.Text = "CATEGORY";
             this.button9.UseVisualStyleBackColor = true;
@@ -256,10 +233,10 @@
             this.priceProduk.LineIdleColor = System.Drawing.Color.White;
             this.priceProduk.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.priceProduk.LineThickness = 3;
-            this.priceProduk.Location = new System.Drawing.Point(130, 222);
-            this.priceProduk.Margin = new System.Windows.Forms.Padding(4);
+            this.priceProduk.Location = new System.Drawing.Point(195, 342);
+            this.priceProduk.Margin = new System.Windows.Forms.Padding(6);
             this.priceProduk.Name = "priceProduk";
-            this.priceProduk.Size = new System.Drawing.Size(127, 25);
+            this.priceProduk.Size = new System.Drawing.Size(190, 54);
             this.priceProduk.TabIndex = 12;
             this.priceProduk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.priceProduk.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox4_OnValueChanged);
@@ -270,9 +247,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(-1, 223);
+            this.button8.Location = new System.Drawing.Point(-2, 343);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(92, 32);
+            this.button8.Size = new System.Drawing.Size(138, 49);
             this.button8.TabIndex = 11;
             this.button8.Text = "PRICE";
             this.button8.UseVisualStyleBackColor = true;
@@ -289,10 +267,10 @@
             this.QuantProduk.LineIdleColor = System.Drawing.Color.White;
             this.QuantProduk.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.QuantProduk.LineThickness = 3;
-            this.QuantProduk.Location = new System.Drawing.Point(130, 172);
-            this.QuantProduk.Margin = new System.Windows.Forms.Padding(4);
+            this.QuantProduk.Location = new System.Drawing.Point(195, 265);
+            this.QuantProduk.Margin = new System.Windows.Forms.Padding(6);
             this.QuantProduk.Name = "QuantProduk";
-            this.QuantProduk.Size = new System.Drawing.Size(127, 28);
+            this.QuantProduk.Size = new System.Drawing.Size(190, 54);
             this.QuantProduk.TabIndex = 10;
             this.QuantProduk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.QuantProduk.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox3_OnValueChanged);
@@ -303,9 +281,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(4, 176);
+            this.button7.Location = new System.Drawing.Point(6, 271);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(115, 32);
+            this.button7.Size = new System.Drawing.Size(172, 49);
             this.button7.TabIndex = 9;
             this.button7.Text = "QUANTITY";
             this.button7.UseVisualStyleBackColor = true;
@@ -322,10 +301,10 @@
             this.NamaProduk.LineIdleColor = System.Drawing.Color.White;
             this.NamaProduk.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.NamaProduk.LineThickness = 3;
-            this.NamaProduk.Location = new System.Drawing.Point(130, 126);
-            this.NamaProduk.Margin = new System.Windows.Forms.Padding(4);
+            this.NamaProduk.Location = new System.Drawing.Point(195, 194);
+            this.NamaProduk.Margin = new System.Windows.Forms.Padding(6);
             this.NamaProduk.Name = "NamaProduk";
-            this.NamaProduk.Size = new System.Drawing.Size(127, 28);
+            this.NamaProduk.Size = new System.Drawing.Size(190, 54);
             this.NamaProduk.TabIndex = 8;
             this.NamaProduk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.NamaProduk.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
@@ -336,9 +315,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(7, 131);
+            this.button6.Location = new System.Drawing.Point(10, 202);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 32);
+            this.button6.Size = new System.Drawing.Size(120, 49);
             this.button6.TabIndex = 7;
             this.button6.Text = "NAME";
             this.button6.UseVisualStyleBackColor = true;
@@ -355,10 +335,10 @@
             this.IDProduk.LineIdleColor = System.Drawing.Color.White;
             this.IDProduk.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.IDProduk.LineThickness = 3;
-            this.IDProduk.Location = new System.Drawing.Point(130, 82);
-            this.IDProduk.Margin = new System.Windows.Forms.Padding(4);
+            this.IDProduk.Location = new System.Drawing.Point(195, 126);
+            this.IDProduk.Margin = new System.Windows.Forms.Padding(6);
             this.IDProduk.Name = "IDProduk";
-            this.IDProduk.Size = new System.Drawing.Size(127, 28);
+            this.IDProduk.Size = new System.Drawing.Size(190, 54);
             this.IDProduk.TabIndex = 6;
             this.IDProduk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.IDProduk.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
@@ -369,9 +349,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(13, 84);
+            this.button5.Location = new System.Drawing.Point(20, 129);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 32);
+            this.button5.Size = new System.Drawing.Size(58, 49);
             this.button5.TabIndex = 5;
             this.button5.Text = "ID";
             this.button5.UseVisualStyleBackColor = true;
@@ -382,9 +363,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(310, 21);
+            this.button4.Location = new System.Drawing.Point(465, 32);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 33);
+            this.button4.Size = new System.Drawing.Size(316, 51);
             this.button4.TabIndex = 4;
             this.button4.Text = "MANAGE PRODUCTS";
             this.button4.UseVisualStyleBackColor = true;
@@ -395,9 +377,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button1.Location = new System.Drawing.Point(18, 111);
+            this.button1.Location = new System.Drawing.Point(27, 171);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 33);
+            this.button1.Size = new System.Drawing.Size(124, 51);
             this.button1.TabIndex = 1;
             this.button1.Text = "Sellers";
             this.button1.UseVisualStyleBackColor = true;
@@ -409,9 +392,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button2.Location = new System.Drawing.Point(0, 150);
+            this.button2.Location = new System.Drawing.Point(0, 231);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 33);
+            this.button2.Size = new System.Drawing.Size(184, 51);
             this.button2.TabIndex = 2;
             this.button2.Text = "Categories";
             this.button2.UseVisualStyleBackColor = true;
@@ -422,10 +406,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(918, 4);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1377, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 18);
+            this.label5.Size = new System.Drawing.Size(24, 26);
             this.label5.TabIndex = 10;
             this.label5.Text = "x";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -436,9 +419,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(0, 484);
+            this.button3.Location = new System.Drawing.Point(0, 745);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 33);
+            this.button3.Size = new System.Drawing.Size(184, 51);
             this.button3.TabIndex = 11;
             this.button3.Text = "Logout";
             this.button3.UseVisualStyleBackColor = true;
@@ -446,9 +430,9 @@
             // 
             // ProdukForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 529);
+            this.ClientSize = new System.Drawing.Size(1413, 814);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
@@ -456,6 +440,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProdukForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProdukForm";
@@ -465,6 +450,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -487,8 +477,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.ComboBox comboBox2;
         private Guna.UI2.WinForms.Guna2DataGridView ProdukGDV;
         private System.Windows.Forms.Button button3;
     }
