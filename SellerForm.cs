@@ -17,7 +17,8 @@ namespace Supermarket
         {
             InitializeComponent();
         }
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TOSHIBA\Documents\supermarketdb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\ASUS\DOCUMENTS\SUPERMARKETDB.mdf;Integrated Security=True;Connect Timeout=30");
+        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TOSHIBA\Documents\supermarketdb.mdf;Integrated Security=True;Connect Timeout=30");
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {
 

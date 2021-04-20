@@ -45,8 +45,10 @@ namespace Supermarket
         {
             populate();
             populatebills();
+            fillCombo();
+            SellerNamelbl.Text = Form1.NamaSeller;
         }
-        int flag = 0;
+        
         private void button5_Click(object sender, EventArgs e)
         {
 
@@ -66,6 +68,7 @@ namespace Supermarket
         {
             NamaProduk.Text = ProdukGDV1.SelectedRows[0].Cells[0].Value.ToString();
             PriceProduk.Text = ProdukGDV1.SelectedRows[0].Cells[2].Value.ToString();
+
         }
         int Grdtotal = 0, n = 0;
         private void button3_Click(object sender, EventArgs e)
@@ -138,7 +141,7 @@ namespace Supermarket
 
         private void BillsGDV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            flag = 1;
+            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -156,9 +159,42 @@ namespace Supermarket
             populate();
         }
 
-        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        private void SearchCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            connect.Open();
+            string query = "select NamaProduk,QuantProduk,PriceProduk from Produk where KategoriProduk='" + SearchCb.SelectedValue.ToString() + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, connect);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var dataset = new DataSet();
+            sda.Fill(dataset);
+            ProdukGDV1.DataSource = dataset.Tables[0];
+            connect.Close();
+        }
 
+        private void fillCombo()
+        {
+            connect.Open();
+            SqlCommand cmd = new SqlCommand("select NamaKategori from Kategori", connect);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("NamaKategori", typeof(string));
+            dt.Load(rdr);
+            SearchCb.ValueMember = "NamaKategori";
+            SearchCb.DataSource = dt;
+            connect.Close();
+        }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void OrderGDV_CellContentClick(object sender, DataGridViewCellEventArgs e)

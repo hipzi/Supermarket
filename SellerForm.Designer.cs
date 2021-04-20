@@ -74,9 +74,10 @@
             this.panel1.Controls.Add(this.IDSeller);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Location = new System.Drawing.Point(137, 29);
+            this.panel1.Location = new System.Drawing.Point(206, 45);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(793, 488);
+            this.panel1.Size = new System.Drawing.Size(1190, 751);
             this.panel1.TabIndex = 1;
             // 
             // SellerGDV
@@ -107,12 +108,14 @@
             this.SellerGDV.DefaultCellStyle = dataGridViewCellStyle3;
             this.SellerGDV.EnableHeadersVisualStyles = false;
             this.SellerGDV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.SellerGDV.Location = new System.Drawing.Point(310, 85);
+            this.SellerGDV.Location = new System.Drawing.Point(465, 131);
+            this.SellerGDV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SellerGDV.Name = "SellerGDV";
             this.SellerGDV.RowHeadersVisible = false;
+            this.SellerGDV.RowHeadersWidth = 62;
             this.SellerGDV.RowTemplate.Height = 30;
             this.SellerGDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.SellerGDV.Size = new System.Drawing.Size(467, 390);
+            this.SellerGDV.Size = new System.Drawing.Size(700, 600);
             this.SellerGDV.TabIndex = 21;
             this.SellerGDV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.SellerGDV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -150,10 +153,10 @@
             this.PassSeller.LineIdleColor = System.Drawing.Color.White;
             this.PassSeller.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.PassSeller.LineThickness = 3;
-            this.PassSeller.Location = new System.Drawing.Point(130, 268);
-            this.PassSeller.Margin = new System.Windows.Forms.Padding(4);
+            this.PassSeller.Location = new System.Drawing.Point(195, 412);
+            this.PassSeller.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PassSeller.Name = "PassSeller";
-            this.PassSeller.Size = new System.Drawing.Size(127, 25);
+            this.PassSeller.Size = new System.Drawing.Size(190, 54);
             this.PassSeller.TabIndex = 20;
             this.PassSeller.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -164,9 +167,10 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Teal;
-            this.button12.Location = new System.Drawing.Point(97, 331);
+            this.button12.Location = new System.Drawing.Point(146, 509);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(74, 30);
+            this.button12.Size = new System.Drawing.Size(111, 46);
             this.button12.TabIndex = 16;
             this.button12.Text = "EDIT";
             this.button12.UseVisualStyleBackColor = false;
@@ -179,9 +183,10 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Teal;
-            this.button11.Location = new System.Drawing.Point(177, 331);
+            this.button11.Location = new System.Drawing.Point(266, 509);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(80, 30);
+            this.button11.Size = new System.Drawing.Size(120, 46);
             this.button11.TabIndex = 15;
             this.button11.Text = "DELETE";
             this.button11.UseVisualStyleBackColor = false;
@@ -194,9 +199,10 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Teal;
-            this.button10.Location = new System.Drawing.Point(17, 331);
+            this.button10.Location = new System.Drawing.Point(26, 509);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(74, 30);
+            this.button10.Size = new System.Drawing.Size(111, 46);
             this.button10.TabIndex = 11;
             this.button10.Text = "ADD";
             this.button10.UseVisualStyleBackColor = false;
@@ -208,9 +214,10 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(7, 269);
+            this.button9.Location = new System.Drawing.Point(10, 414);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(119, 32);
+            this.button9.Size = new System.Drawing.Size(178, 49);
             this.button9.TabIndex = 13;
             this.button9.Text = "PASSWORD";
             this.button9.UseVisualStyleBackColor = true;
@@ -227,10 +234,10 @@
             this.PhoneSeller.LineIdleColor = System.Drawing.Color.White;
             this.PhoneSeller.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.PhoneSeller.LineThickness = 3;
-            this.PhoneSeller.Location = new System.Drawing.Point(130, 222);
-            this.PhoneSeller.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneSeller.Location = new System.Drawing.Point(195, 342);
+            this.PhoneSeller.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PhoneSeller.Name = "PhoneSeller";
-            this.PhoneSeller.Size = new System.Drawing.Size(127, 25);
+            this.PhoneSeller.Size = new System.Drawing.Size(190, 54);
             this.PhoneSeller.TabIndex = 12;
             this.PhoneSeller.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -240,9 +247,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(8, 223);
+            this.button8.Location = new System.Drawing.Point(12, 343);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(84, 32);
+            this.button8.Size = new System.Drawing.Size(126, 49);
             this.button8.TabIndex = 11;
             this.button8.Text = "PHONE";
             this.button8.UseVisualStyleBackColor = true;
@@ -259,10 +267,10 @@
             this.AgeSeller.LineIdleColor = System.Drawing.Color.White;
             this.AgeSeller.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.AgeSeller.LineThickness = 3;
-            this.AgeSeller.Location = new System.Drawing.Point(130, 172);
-            this.AgeSeller.Margin = new System.Windows.Forms.Padding(4);
+            this.AgeSeller.Location = new System.Drawing.Point(195, 265);
+            this.AgeSeller.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.AgeSeller.Name = "AgeSeller";
-            this.AgeSeller.Size = new System.Drawing.Size(127, 28);
+            this.AgeSeller.Size = new System.Drawing.Size(190, 54);
             this.AgeSeller.TabIndex = 10;
             this.AgeSeller.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -272,9 +280,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(6, 177);
+            this.button7.Location = new System.Drawing.Point(9, 272);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(68, 32);
+            this.button7.Size = new System.Drawing.Size(102, 49);
             this.button7.TabIndex = 9;
             this.button7.Text = "AGE";
             this.button7.UseVisualStyleBackColor = true;
@@ -291,10 +300,10 @@
             this.NamaSeller.LineIdleColor = System.Drawing.Color.White;
             this.NamaSeller.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.NamaSeller.LineThickness = 3;
-            this.NamaSeller.Location = new System.Drawing.Point(130, 126);
-            this.NamaSeller.Margin = new System.Windows.Forms.Padding(4);
+            this.NamaSeller.Location = new System.Drawing.Point(195, 194);
+            this.NamaSeller.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.NamaSeller.Name = "NamaSeller";
-            this.NamaSeller.Size = new System.Drawing.Size(127, 28);
+            this.NamaSeller.Size = new System.Drawing.Size(190, 54);
             this.NamaSeller.TabIndex = 8;
             this.NamaSeller.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -304,9 +313,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(7, 131);
+            this.button6.Location = new System.Drawing.Point(10, 202);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 32);
+            this.button6.Size = new System.Drawing.Size(120, 49);
             this.button6.TabIndex = 7;
             this.button6.Text = "NAME";
             this.button6.UseVisualStyleBackColor = true;
@@ -323,10 +333,10 @@
             this.IDSeller.LineIdleColor = System.Drawing.Color.White;
             this.IDSeller.LineMouseHoverColor = System.Drawing.Color.WhiteSmoke;
             this.IDSeller.LineThickness = 3;
-            this.IDSeller.Location = new System.Drawing.Point(130, 82);
-            this.IDSeller.Margin = new System.Windows.Forms.Padding(4);
+            this.IDSeller.Location = new System.Drawing.Point(195, 126);
+            this.IDSeller.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.IDSeller.Name = "IDSeller";
-            this.IDSeller.Size = new System.Drawing.Size(127, 28);
+            this.IDSeller.Size = new System.Drawing.Size(190, 54);
             this.IDSeller.TabIndex = 6;
             this.IDSeller.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.IDSeller.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
@@ -337,9 +347,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(13, 84);
+            this.button5.Location = new System.Drawing.Point(20, 129);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 32);
+            this.button5.Size = new System.Drawing.Size(58, 49);
             this.button5.TabIndex = 5;
             this.button5.Text = "ID";
             this.button5.UseVisualStyleBackColor = true;
@@ -350,9 +361,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(310, 21);
+            this.button4.Location = new System.Drawing.Point(465, 32);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 33);
+            this.button4.Size = new System.Drawing.Size(316, 51);
             this.button4.TabIndex = 4;
             this.button4.Text = "MANAGE SELLERS";
             this.button4.UseVisualStyleBackColor = true;
@@ -362,10 +374,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(918, 4);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(1377, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 18);
+            this.label5.Size = new System.Drawing.Size(24, 26);
             this.label5.TabIndex = 11;
             this.label5.Text = "x";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -376,9 +387,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button2.Location = new System.Drawing.Point(11, 150);
+            this.button2.Location = new System.Drawing.Point(16, 231);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 33);
+            this.button2.Size = new System.Drawing.Size(180, 51);
             this.button2.TabIndex = 13;
             this.button2.Text = "Categories";
             this.button2.UseVisualStyleBackColor = true;
@@ -390,9 +402,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button1.Location = new System.Drawing.Point(18, 111);
+            this.button1.Location = new System.Drawing.Point(27, 171);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 33);
+            this.button1.Size = new System.Drawing.Size(148, 51);
             this.button1.TabIndex = 12;
             this.button1.Text = "Products";
             this.button1.UseVisualStyleBackColor = true;
@@ -404,9 +417,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(0, 484);
+            this.button3.Location = new System.Drawing.Point(0, 745);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 33);
+            this.button3.Size = new System.Drawing.Size(184, 51);
             this.button3.TabIndex = 25;
             this.button3.Text = "Logout";
             this.button3.UseVisualStyleBackColor = true;
@@ -414,9 +428,10 @@
             // 
             // SellerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(942, 529);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1413, 814);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -424,6 +439,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SellerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellerForm";

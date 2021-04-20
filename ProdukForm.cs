@@ -23,7 +23,8 @@ namespace Supermarket
             produk.Show();
             this.Hide();
         }
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TOSHIBA\Documents\supermarketdb.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\ASUS\DOCUMENTS\SUPERMARKETDB.mdf;Integrated Security=True;Connect Timeout=30");
+        //SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\TOSHIBA\Documents\supermarketdb.mdf;Integrated Security=True;Connect Timeout=30");
         private void label5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -187,5 +188,9 @@ namespace Supermarket
             login.Show();
         }
 
+        private void button13_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
     }
 }

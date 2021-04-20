@@ -17,7 +17,7 @@ namespace Supermarket
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Splach());
-            Application.Run(new SellingForm());
+            Application.Run(new ProdukForm());
         }
     }
 }
