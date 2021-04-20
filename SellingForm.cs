@@ -45,7 +45,6 @@ namespace Supermarket
         {
             populate();
             populatebills();
-            fillCombo();
             SellerNamelbl.Text = Form1.NamaSeller;
         }
         
@@ -152,37 +151,6 @@ namespace Supermarket
             e.Graphics.DrawString("Date : " + BillsGDV.SelectedRows[0].Cells[2].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 130));
             e.Graphics.DrawString("Total Amount : " + BillsGDV.SelectedRows[0].Cells[2].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 160));
             //e.Graphics.DrawString("CodeSpace", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Teal, new Point(300));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            populate();
-        }
-
-        private void SearchCb_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            connect.Open();
-            string query = "select NamaProduk,QuantProduk,PriceProduk from Produk where KategoriProduk='" + SearchCb.SelectedValue.ToString() + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, connect);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var dataset = new DataSet();
-            sda.Fill(dataset);
-            ProdukGDV1.DataSource = dataset.Tables[0];
-            connect.Close();
-        }
-
-        private void fillCombo()
-        {
-            connect.Open();
-            SqlCommand cmd = new SqlCommand("select NamaKategori from Kategori", connect);
-            SqlDataReader rdr;
-            rdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("NamaKategori", typeof(string));
-            dt.Load(rdr);
-            SearchCb.ValueMember = "NamaKategori";
-            SearchCb.DataSource = dt;
-            connect.Close();
         }
 
         private void logout_Click(object sender, EventArgs e)

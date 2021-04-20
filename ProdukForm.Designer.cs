@@ -36,7 +36,6 @@ namespace Supermarket
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProdukForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
             this.ProdukGDV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -63,7 +62,6 @@ namespace Supermarket
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
-            this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.ProdukGDV);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
@@ -85,22 +83,6 @@ namespace Supermarket
             this.panel1.Size = new System.Drawing.Size(1190, 751);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.White;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.Teal;
-            this.button13.Location = new System.Drawing.Point(1049, 83);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(116, 38);
-            this.button13.TabIndex = 28;
-            this.button13.Text = "Refresh";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // ProdukGDV
             // 
@@ -503,6 +485,5 @@ namespace Supermarket
         private System.Windows.Forms.Button button11;
         private Guna.UI2.WinForms.Guna2DataGridView ProdukGDV;
         private System.Windows.Forms.Button button3;
-        private Button button13;
     }
 }
