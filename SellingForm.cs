@@ -149,7 +149,7 @@ namespace Supermarket
             e.Graphics.DrawString("Bill ID : " +BillsGDV.SelectedRows[0].Cells[0].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 70));
             e.Graphics.DrawString("Seller Name : " + BillsGDV.SelectedRows[0].Cells[1].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 100));
             e.Graphics.DrawString("Date : " + BillsGDV.SelectedRows[0].Cells[2].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 130));
-            e.Graphics.DrawString("Total Amount : " + BillsGDV.SelectedRows[0].Cells[2].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 160));
+            e.Graphics.DrawString("Total Amount : " + BillsGDV.SelectedRows[0].Cells[3].Value.ToString(), new Font("Century Gothic", 20, FontStyle.Bold), Brushes.Teal, new Point(100, 160));
             //e.Graphics.DrawString("CodeSpace", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Teal, new Point(300));
         }
 
